@@ -1,0 +1,5 @@
+<tr>
+  <td><%= setting.var %></td>
+  <td><%= best_in_place setting, :value, :as => :input, :activator => "#value#{setting.id}"  %></td>
+  <td><%= link_to "Edit", "javascript:void(0);" , :id=>"value#{setting.id}" %> | <%= link_to "Delete", setting_path(setting) , method: :delete %></td>
+</tr><%#= best_in_place @user, :name, :as => :input, :nil => "Click me to add content!" %>
